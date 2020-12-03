@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        span.label{
+            border-radius: 3px;
+            padding :0px 5px;
+            color: white;
+        }
+        span.label-sucess{
+            background-color: green;
+        }
+        span.label-alert{
+            background-color: orange;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        thead,tbody{
+            text-align: center;
+            padding: 10px;
+        }
+        tr{
+            border-bottom: 1px solid gray;
+        }
+        tbody tr:nth-child(odd){
+            background-color: aquamarine;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            background-color: darkred;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        a:hover{
+            background-color:thistle;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <h3>学生信息</h3>
+    <p>说明：以下为2046级学生名单，共4人，
+        <span class="label label-sucess">成功加载3人。</span>
+        <span class="label label-alert">警告：列表不包含降级学生。</span></p>
+    <table>
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>姓名</th>
+            <th>班级</th>
+            <th>Email</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>郭立新</td>
+            <td>软件工程2046级1班</td>
+            <td>guo@example.com</td>
+            <td><a href="#">修改</a> <a href="#">删除</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>黄英</td>
+            <td>软件工程2046级1班</td>
+            <td>huang@example.com</td>
+            <td><a href="#">修改</a> <a href="#">删除</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>吕惠玲</td>
+            <td>软件工程2046级2班</td>
+            <td>lv@example.com</td>
+            <td><a href="#">修改</a> <a href="#">删除</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
